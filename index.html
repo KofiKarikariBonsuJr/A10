@@ -1,13 +1,13 @@
-<!--<form action="/url" method="GET"> 
+<form action="/url" method="GET"> 
     <label for="name">username:</label>
     <input type="text" id="name" name="name"><br><br>
     <input type="submit" value="Submit">
-</form>-->
+</form>
+
+<p id = " "></p>
 
 <script>
-    var textBox = document.createElement("input");
-    textBox.setAttribute("type", "text");
-    
+
     document.cookie = "username = " + name;
 
     function getCookie(cname) {
@@ -25,6 +25,7 @@
   }
   return "";
 }
+    document.getElementById(' ').innerHTML = getCookie("username");
     let finalname = ("Welcome again " + getCookie("username"))
 
 
