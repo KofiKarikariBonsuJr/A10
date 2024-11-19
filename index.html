@@ -75,5 +75,9 @@ function checkCookie() {
     <script>
         let x = document.cookie;
          document.write("The cookies read: " +x );
+         document.write("enter RESET to reset cookies")
+         if (x ="RESET"){
+            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+         }
     </script>
 </body>
