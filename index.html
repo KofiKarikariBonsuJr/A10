@@ -74,10 +74,10 @@ function checkCookie() {
 <body onload="checkCookie()">
     <script>
         let x = document.cookie;
-         document.write("The cookies read: " +x );
-         document.write("enter RESET to reset cookies")
-         if (x ="RESET"){
-            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-         }
+         document.write("The cookies read: ");
+    </script>
+    <br>
+    <script>
+        document.write(x)
     </script>
 </body>
